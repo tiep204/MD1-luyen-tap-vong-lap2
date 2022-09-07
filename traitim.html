@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+  body{
+    font-size: xxx-large;
+      border: red;
+      text-align: center;
+  }
+</style>
+
+<body>
+
+<script>
+  function checkLove() {
+    for (let i = 1; i <= 7; i++) {
+      for (let j = 1; j <= 7; j++) {
+        if ((i === 1) && (j === 2 || j === 3 || j === 5 || j === 6)
+                || (i === 2) || (i === 3) || (i === 4)
+                || (i === 5) && (j === 2 || j === 3 || j === 4 || j === 5 || j === 6)
+                || (i === 6) && (j === 3 || j === 4 || j === 5)
+                || (i === 7) && (j === 4)) {
+          document.write("&nbsp;*&nbsp;")
+        }else {
+          document.write("&nbsp;&nbsp;&nbsp;&nbsp;")
+        }
+      }document.write("<br>")
+
+    }
+  }
+  checkLove();
+</script>
+
+</body>
+</html>

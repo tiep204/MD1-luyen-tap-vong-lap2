@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--In tam giác vuông. Các góc vuông nằm ở các vị trí khác nhau-->
+<script>
+    // var count;
+    // for(count = 0; count <100; count++){
+    //     document.write("<hr width="+count + "%>");
+    // }
+    //
+
+
+    for (let i = 0; i < 10; i++) {
+        for (let j = 1; j <= i; j++) {
+            document.write("*")
+        }
+        document.write("*" + '<br>')
+    }
+</script>
+<br><br>
+<script>
+    for (let i = 9; i > -1; i--) {
+        for (let j = 1; j <= i; j++) {
+            document.write("*")
+        }
+        document.write("*" + '<br>')
+    }
+</script>
+
+<script>
+    for (let i = 1; i < 10; i++) {
+        for (let j = 10; j > i; j--) {
+            document.write("&nbsp;&nbsp;")
+        }
+        for (let k = 1; k < i; k++) {
+            document.write("*")
+        }
+        document.write("<br/>")
+
+    }
+</script>
+<br>
+<script>
+    for (let i = 10; i > 1; i--) {
+        for (let j = 10; j > i; j--) {
+            document.write("&nbsp;&nbsp;")
+        }
+        for (let k = 1; k < i; k++) {
+            document.write("*")
+        }
+        document.write("<br/>")
+    }
+
+</script>
+
+
+<script>
+    // let bang
+    // bang = "<table width='300px' border='1'>"
+    // for (let i = 0; i < 10; i++) {
+    //     bang += "<tr>"
+    //     for (let j = 1; j < 15; j++) {
+    //         if(i==1 ||i==9){
+    //             bang += "<td>" + "-" + ";</td>"
+    //         }else if()
+    //
+    //     }
+    //     bang += "</tr>"
+    //
+    // }
+    // bang += "</table>"
+    // document.write(bang)
+
+    let a = +prompt('nhap rong:')
+    let b = +prompt('chieu dai')
+
+    for(let i = 1; i<= b; i++){
+        for(let j =1; j <= a;j++){
+            if(i===1 || i===b || j===1 || j===a){
+                document.write('&nbsp;*&nbsp;')
+            }else {
+                document.write('&nbsp;&nbsp;&nbsp;&nbsp;')
+            }
+        }
+        document.write('<br>')
+    }
+</script>
+</body>
+</html>
